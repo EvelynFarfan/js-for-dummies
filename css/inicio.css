@@ -1,0 +1,15 @@
+/* CSS SEGUNDA PÁGINA (INICIO)*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+.menu{
+  background-color: #003670;
+}
+.navbar-default .navbar-nav > li > a{
+	color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	color: skyblue;
+}
