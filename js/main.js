@@ -72,55 +72,48 @@ window.addEventListener("load", function() {
     }
 
     concepto.addEventListener("keyup", function (e) {
-        var tecla = e.keyCode;
-        heightTextArea(tecla);
+      var tecla = e.keyCode;
+      heightTextArea(tecla);
     });
 
     function heightTextArea (tecla) {
         if (tecla == 13) {
-            termino.rows++;
-            concepto.rows++;
+          termino.rows++;
+          concepto.rows++;
         } else if (tecla == 8) {
-            termino.rows--;
-            concepto.rows--;
+          termino.rows--;
+          concepto.rows--;
         }
         if (termino.rows < 4) {
-            termino.rows = 4; 
-            concepto.rows =4;   
+          termino.rows = 4; 
+          concepto.rows =4;   
         }
     }
 
     dragTarget.addEventListener("dragstart", function (e) {
-        dragStart(e);
+      dragStart(e);
     });
-
     function dragStart(e) {
-        e.dataTransfer.setData("Text", event.target.id);
+      e.dataTransfer.setData("Text", event.target.id);
     }
-
     dropTarget1.addEventListener("drop",function (e) {
-        drop(e);
+      drop(e);
     });
-
     dropTarget2.addEventListener("drop",function (e) {
-        drop(e);
+      drop(e);
     });
-
     dropTarget1.addEventListener("dragover",function (e) {
-        allowDrop(e);
+      allowDrop(e);
     });
-
     dropTarget2.addEventListener("dragover",function (e) {
-        allowDrop(e);
+      allowDrop(e);
     });
-
     function drop(e) {
-        e.preventDefault();
-        var data = event.dataTransfer.getData("Text");
-        e.target.appendChild(document.getElementById(data));
+      e.preventDefault();
+      var data = event.dataTransfer.getData("Text");
+      e.target.appendChild(document.getElementById(data));
     }
-
     function allowDrop(e) {
-        e.preventDefault();
+      e.preventDefault();
     }
 });
