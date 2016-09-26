@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>JS FOR DUMMIES</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/inicio.css">
 </head>
@@ -10,39 +12,96 @@
 	<header>
 		<nav class="navbar navbar-default menu">
 		  <div class="container-fluid menu">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">Brand</a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a class="menuLetra" href="#">Create</a></li>
-		        <li><a class="menuLetra" href="#">Flash Cards</a></li>
-		        <li><a class="menuLetra" href="#">Play</a></li>
-		      </ul>
-		    </div>
+		  	<div class="contenedorMenu">
+		  		<div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"><img src="img/logo-white.png" alt="imagen logo"></a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			        <li><button class="botonMenu">Ingresar</button></li>
+			        <li><button class="botonMenu">Buscar</button></li>
+			      </ul>
+			    </div>
+		  	</div>
 		  </div>
 		</nav>
 	</header>
-	<section>
-		<div id="contenedor">
-			<form>
-				<textarea name="mensaje" id="termino" cols="30" rows="4"></textarea>
-				<textarea name="mensaje" id="concepto" cols="30" rows="4"></textarea>
-				<button id="crear" type="button">Crear</button>
-			</form>		
+	<section id="banner">
+		<div class="container">
+			<div class="row">
+					<div class="textoBanner col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						<span>Aprende JavaScript gratis y diviértete.</span>
+						<br>
+						<button class="botonBanner">Empezar</button>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						<img class="img-banner img-responsive" src="img/img-banner.png" alt="img-banner">
+					</div>
+			</div>
 		</div>
-		<div id="card1" class="cards"></div>
-		<div id="card2" class="cards"></div>
 	</section>
-	<body>
-	</body>
+	<section id="circle">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<a href="crear.html">
+						<div class="circulo circleOne">
+							<div class="circleWhite">
+								<div class="contCircle">
+									<img class="iconCircle" src="img/icon-uno.png" alt="icono-crear">
+									<span class="textCircle">Crear</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<a href="#">
+						<div class="circulo circleTwo">
+							<div class="circleWhite">
+								<div class="contCircle">
+									<img class="iconCircle" src="img/icon-dos.png" alt="icono-card">
+								<span class="textCircle">Tarjetas</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<a href="#">
+						<div class="circulo circleThree">
+							<div class="circleWhite">
+								<div class="contCircle">
+									<img class="iconCircle" src="img/icon-tres.png" alt="icono-play">
+									<span class="textCircle">Juega</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="copyright col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<span>©2016 JS For Dummies Todos los derechos reservados.</span>
+				</div>
+				<div class="social col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<a class="facebook" href="#"><span class="fa fa-facebook-square"></span></a>
+					<a class="twitter" href="#"><span class="fa fa-twitter-square"></span></a>
+					<a class="youtube" href="#"><span class="fa fa-youtube-square"></span></a>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script type="text/javascript" src="js/main.js"></script>
-	<footer></footer>
 </body>
 </html>
