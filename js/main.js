@@ -3,7 +3,7 @@ window.addEventListener("load", function() {
     var termino = document.getElementById("termino");
     var concepto = document.getElementById("concepto");
     var cardsTexto = document.querySelectorAll(".cardsTexto");
-    var dragTarget = document.getElementById("dragtarget");
+    var dragTarget = document.getElementById("dragTarget");
     var dropTarget1 = document.getElementById("div1");
     var dropTarget2 = document.getElementById("div2");
 
